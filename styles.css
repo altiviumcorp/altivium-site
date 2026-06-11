@@ -249,7 +249,8 @@ h1 {
 }
 
 .feature-grid,
-.team-grid {
+.team-grid,
+.investor-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
@@ -257,7 +258,8 @@ h1 {
 
 .feature-card,
 .timeline article,
-.team-grid article {
+.team-grid article,
+.investor-grid article {
   min-width: 0;
   padding: 26px;
   border: 1px solid var(--line);
@@ -279,14 +281,16 @@ h1 {
 
 .feature-card h3,
 .timeline h3,
-.team-grid h3 {
+.team-grid h3,
+.investor-grid h3 {
   margin-bottom: 12px;
   font-size: 1.25rem;
 }
 
 .feature-card p,
 .timeline p,
-.team-grid p {
+.team-grid p,
+.investor-grid p {
   margin-bottom: 0;
   color: var(--muted);
   line-height: 1.65;
@@ -341,6 +345,22 @@ h1 {
 
 .progress {
   background: #080909;
+}
+
+.investor-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.investor-grid article {
+  background: linear-gradient(180deg, rgba(248, 245, 238, 0.09), rgba(248, 245, 238, 0.035));
+}
+
+.investor-grid span {
+  display: block;
+  margin-bottom: 34px;
+  color: var(--signal);
+  font-size: 0.82rem;
+  font-weight: 900;
 }
 
 .timeline {
@@ -404,6 +424,7 @@ h1 {
   .signal-strip,
   .intro,
   .feature-grid,
+  .investor-grid,
   .market-layout,
   .team-grid {
     grid-template-columns: 1fr;
@@ -463,6 +484,7 @@ h1 {
 
   .feature-card,
   .timeline article,
+  .investor-grid article,
   .team-grid article {
     padding: 22px;
   }
