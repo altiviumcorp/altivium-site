@@ -25,22 +25,21 @@
   </head>
   <body>
     <header class="site-header" data-header>
-      <a class="brand" href="#top" aria-label="Altivium home">
+      <a class="brand" href="#home" aria-label="Altivium home">
         <span class="brand-mark">A</span>
         <span>Altivium</span>
       </a>
       <nav class="nav" aria-label="Main navigation">
-        <a href="#vision">Vision</a>
-        <a href="#focus">Focus</a>
-        <a href="#market">Market</a>
-        <a href="#investor">Investor View</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
+        <a href="#home">Home</a>
+        <a href="#solution" data-jump-tab="solution">Solution</a>
+        <a href="#market" data-jump-tab="market">Market</a>
+        <a href="#investor" data-jump-tab="investor">Investor</a>
+        <a href="#news" data-jump-tab="news">News</a>
       </nav>
       <a class="nav-cta" href="mailto:altivium.corp@gmail.com">Contact</a>
     </header>
 
-    <main id="top">
+    <main id="home">
       <section class="hero" aria-label="Altivium company introduction">
         <img
           class="hero-media"
@@ -52,175 +51,159 @@
           <p class="eyebrow">Industrial Drone Safety</p>
           <h1>Altivium</h1>
           <p class="hero-copy">
-            Detecting drone fall risk, activating alerts, and helping people
-            on the ground move out of danger.
+            Detect drone fall risk. Activate alerts. Help people move out of danger.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#vision">Our Vision</a>
+            <a class="button primary" href="#solution" data-jump-tab="solution">Explore Solution</a>
             <a class="button secondary" href="mailto:altivium.corp@gmail.com">Contact</a>
           </div>
         </div>
       </section>
 
-      <section class="signal-strip" aria-label="Altivium highlights">
-        <div>
+      <section class="home-summary" aria-label="Altivium safety response summary">
+        <article>
+          <span>01</span>
           <strong>Detect</strong>
-          <span>Recognize potential drone fall events</span>
-        </div>
-        <div>
+          <p>Recognize potential fall events before they become silent ground risks.</p>
+        </article>
+        <article>
+          <span>02</span>
           <strong>Warn</strong>
-          <span>Trigger clear ground-level safety alerts</span>
-        </div>
-        <div>
+          <p>Activate visible and audible alerts that people nearby can understand quickly.</p>
+        </article>
+        <article>
+          <span>03</span>
           <strong>Protect</strong>
-          <span>Help pedestrians avoid the impact zone</span>
-        </div>
+          <p>Create more reaction time so pedestrians can move away from the risk area.</p>
+        </article>
       </section>
 
-      <section class="section intro" id="vision">
-        <div class="section-heading">
-          <p class="eyebrow">Vision</p>
-          <h2>Giving people on the ground more time to react.</h2>
+      <section class="tabs-shell" id="tabs" aria-label="Altivium information tabs">
+        <div class="tabs-heading">
+          <p class="eyebrow">Explore Altivium</p>
+          <h2>Focused information, organized by audience.</h2>
         </div>
-        <p>
-          Altivium is a student-led startup focused on the safety layer
-          required for wider industrial drone adoption. We believe unmanned
-          flight can become part of everyday infrastructure only when failures
-          are no longer silent. Our approach is to detect dangerous descent,
-          activate immediate warnings, and support safer pedestrian evacuation
-          before impact.
-        </p>
-      </section>
 
-      <section class="section" id="focus">
-        <div class="section-heading">
-          <p class="eyebrow">What We Build</p>
-          <h2>A safety response layer for drones operating near people.</h2>
+        <div class="tab-list" role="tablist" aria-label="Altivium sections">
+          <button class="tab-button is-active" type="button" role="tab" id="tab-solution" aria-controls="panel-solution" aria-selected="true" data-tab="solution">
+            Solution
+          </button>
+          <button class="tab-button" type="button" role="tab" id="tab-market" aria-controls="panel-market" aria-selected="false" data-tab="market">
+            Market
+          </button>
+          <button class="tab-button" type="button" role="tab" id="tab-investor" aria-controls="panel-investor" aria-selected="false" data-tab="investor">
+            Investor
+          </button>
+          <button class="tab-button" type="button" role="tab" id="tab-news" aria-controls="panel-news" aria-selected="false" data-tab="news">
+            News
+          </button>
+          <button class="tab-button" type="button" role="tab" id="tab-team" aria-controls="panel-team" aria-selected="false" data-tab="team">
+            Team
+          </button>
         </div>
-        <div class="feature-grid">
-          <article class="feature-card">
-            <span class="feature-index">01</span>
-            <h3>Fall-Risk Detection</h3>
-            <p>
-              Identifying abnormal flight behavior that may indicate a drone
-              is entering a dangerous descent or loss-of-control scenario.
-            </p>
-          </article>
-          <article class="feature-card">
-            <span class="feature-index">02</span>
-            <h3>Active Warning</h3>
-            <p>
-              Activating visible and audible warning signals so people nearby
-              can recognize danger quickly instead of discovering it too late.
-            </p>
-          </article>
-          <article class="feature-card">
-            <span class="feature-index">03</span>
-            <h3>Pedestrian Protection</h3>
-            <p>
-              Creating a practical buffer of reaction time so pedestrians can
-              move away from the projected risk area before impact.
-            </p>
-          </article>
-        </div>
-      </section>
 
-      <section class="section band" id="market">
-        <div class="section-heading">
-          <p class="eyebrow">Market Direction</p>
-          <h2>Targeting organizations that operate drones near real assets and real people.</h2>
-        </div>
-        <div class="market-layout">
-          <div class="market-copy">
+        <section class="tab-panel is-active" role="tabpanel" id="panel-solution" aria-labelledby="tab-solution" data-panel="solution">
+          <div class="panel-intro">
+            <p class="eyebrow">What We Build</p>
+            <h2>A safety response layer for drones operating near people.</h2>
+            <p>
+              Altivium focuses on the moment when drone failure needs to become
+              visible. The product direction is simple: detect dangerous
+              descent, warn nearby pedestrians, and support safer evacuation
+              before impact.
+            </p>
+          </div>
+          <div class="card-grid three">
+            <article class="info-card">
+              <span>01</span>
+              <h3>Fall-Risk Detection</h3>
+              <p>Identify abnormal flight behavior that may indicate dangerous descent or loss of control.</p>
+            </article>
+            <article class="info-card">
+              <span>02</span>
+              <h3>Active Warning</h3>
+              <p>Trigger clear warning signals so people nearby can recognize danger quickly.</p>
+            </article>
+            <article class="info-card">
+              <span>03</span>
+              <h3>Pedestrian Protection</h3>
+              <p>Create a practical buffer of reaction time before the projected impact risk becomes immediate.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="tab-panel" role="tabpanel" id="panel-market" aria-labelledby="tab-market" data-panel="market" hidden>
+          <div class="panel-intro">
+            <p class="eyebrow">Market Direction</p>
+            <h2>For teams operating drones near real assets and real people.</h2>
             <p>
               Altivium is exploring opportunities with drone training centers,
               infrastructure inspection teams, logistics operators, and public
-              safety organizations. These groups need more than flight
-              performance; they need systems that make failure states visible,
-              warn people on the ground, and make missions easier to approve.
-            </p>
-            <p>
-              Our early strategy is centered on customer discovery, pilot
-              partnerships, and use cases where operational risk, approval
-              cycles, and stakeholder trust directly affect drone adoption.
+              safety organizations that need safer mission approval and clearer
+              ground-risk response.
             </p>
           </div>
-          <div class="market-list" aria-label="Target customers">
-            <div>
+          <div class="card-grid three">
+            <article class="info-card">
               <span>01</span>
-              <strong>Industrial Operators</strong>
-              <small>Inspection, logistics, construction, and enterprise drone teams</small>
-            </div>
-            <div>
+              <h3>Industrial Operators</h3>
+              <p>Inspection, logistics, construction, and enterprise drone teams.</p>
+            </article>
+            <article class="info-card">
               <span>02</span>
-              <strong>Public-Sector Missions</strong>
-              <small>Municipal, safety, monitoring, and infrastructure programs</small>
-            </div>
-            <div>
+              <h3>Public-Sector Missions</h3>
+              <p>Municipal, monitoring, safety, and infrastructure programs.</p>
+            </article>
+            <article class="info-card">
               <span>03</span>
-              <strong>Training Ecosystems</strong>
-              <small>Professional drone education and field validation partners</small>
-            </div>
+              <h3>Training Ecosystems</h3>
+              <p>Professional drone education and field validation partners.</p>
+            </article>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="section investor" id="investor">
-        <div class="section-heading">
-          <p class="eyebrow">Investor View</p>
-          <h2>Built around the milestones investors expect from an early-stage hardware startup.</h2>
-        </div>
-        <div class="investor-grid">
-          <article>
-            <span>01</span>
-            <h3>Clear Customer Problem</h3>
+        <section class="tab-panel" role="tabpanel" id="panel-investor" aria-labelledby="tab-investor" data-panel="investor" hidden>
+          <div class="panel-intro">
+            <p class="eyebrow">Investor View</p>
+            <h2>Early-stage hardware milestones, made visible.</h2>
             <p>
-              Industrial drone adoption depends on safety confidence, mission
-              approval, and a credible way to reduce ground-risk exposure when
-              drones operate near people.
+              Altivium is shaping its roadmap around customer discovery, pilot
+              validation, funding readiness, and repeatable safety deployment
+              requirements while keeping implementation details confidential.
             </p>
-          </article>
-          <article>
-            <span>02</span>
-            <h3>Pilot-Led Validation</h3>
-            <p>
-              The company is prioritizing field learning, user interviews, and
-              partner-led validation before scaling product claims publicly.
-            </p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3>Commercialization Path</h3>
-            <p>
-              Altivium is shaping its roadmap around enterprise sales cycles,
-              public-sector readiness, and repeatable safety deployment
-              requirements.
-            </p>
-          </article>
-          <article>
-            <span>04</span>
-            <h3>Funding Readiness</h3>
-            <p>
-              The team is preparing for non-dilutive funding, investor
-              conversations, and structured milestones from prototype learning
-              to market entry.
-            </p>
-          </article>
-        </div>
-      </section>
+          </div>
+          <div class="card-grid four">
+            <article class="info-card">
+              <span>01</span>
+              <h3>Clear Customer Problem</h3>
+              <p>Drone adoption depends on a credible way to reduce ground-risk exposure near people.</p>
+            </article>
+            <article class="info-card">
+              <span>02</span>
+              <h3>Pilot-Led Validation</h3>
+              <p>Field learning, user interviews, and partner-led validation before broad claims.</p>
+            </article>
+            <article class="info-card">
+              <span>03</span>
+              <h3>Commercialization Path</h3>
+              <p>Enterprise sales cycles, public-sector readiness, and repeatable deployment requirements.</p>
+            </article>
+            <article class="info-card">
+              <span>04</span>
+              <h3>Funding Readiness</h3>
+              <p>Structured milestones from prototype learning to market entry and investor conversations.</p>
+            </article>
+          </div>
+        </section>
 
-      <section class="section news" id="news">
-        <div class="section-heading">
-          <p class="eyebrow">News Watch</p>
-          <h2>Tracking the signals shaping safer drone adoption.</h2>
-        </div>
-        <div class="news-layout">
-          <div class="news-copy">
+        <section class="tab-panel" role="tabpanel" id="panel-news" aria-labelledby="tab-news" data-panel="news" hidden>
+          <div class="panel-intro">
+            <p class="eyebrow">News Watch</p>
+            <h2>Signals shaping safer drone adoption.</h2>
             <p>
               Altivium follows market signals across drone safety, regulation,
-              public-sector operations, and industrial deployment. This helps us
-              understand where safer flight operations are becoming a practical
-              requirement, not just a technical preference.
+              public-sector operations, and industrial deployment to understand
+              where safer flight operations are becoming a practical requirement.
             </p>
             <a
               class="button secondary"
@@ -231,78 +214,53 @@
               View Latest Drone Safety News
             </a>
           </div>
-          <div class="news-grid" aria-label="Drone news themes">
-            <article>
+          <div class="card-grid three">
+            <article class="info-card">
               <span>Regulation</span>
               <h3>Safety Rules</h3>
-              <p>Operations near people, compliance standards, and policy updates affecting industrial drone use.</p>
+              <p>Operations near people, compliance standards, and policy updates affecting drone use.</p>
             </article>
-            <article>
+            <article class="info-card">
               <span>Adoption</span>
               <h3>Industrial Missions</h3>
-              <p>Inspection, logistics, construction, public safety, and other real-world drone deployments.</p>
+              <p>Inspection, logistics, construction, public safety, and real-world drone deployment.</p>
             </article>
-            <article>
+            <article class="info-card">
               <span>Market</span>
               <h3>Investment Signals</h3>
               <p>Funding, partnerships, pilot programs, and customer demand around safer autonomous flight.</p>
             </article>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="section progress">
-        <div class="section-heading">
-          <p class="eyebrow">Progress</p>
-          <h2>From university-backed research to startup execution.</h2>
-        </div>
-        <div class="timeline">
-          <article>
-            <span>Foundation</span>
-            <h3>Academic foundation</h3>
+        <section class="tab-panel" role="tabpanel" id="panel-team" aria-labelledby="tab-team" data-panel="team" hidden>
+          <div class="panel-intro">
+            <p class="eyebrow">Team</p>
+            <h2>Engineering, hardware, and go-to-market in one execution track.</h2>
             <p>
-              Altivium combines engineering research, hardware thinking, and
-              business model development into one early-stage execution track.
+              Altivium is a student-led team combining technical validation,
+              physical product thinking, customer discovery, and startup
+              execution.
             </p>
-          </article>
-          <article>
-            <span>Validation</span>
-            <h3>Prototype-stage learning</h3>
-            <p>
-              The team is moving through early technical validation and field
-              research while keeping detailed product information confidential.
-            </p>
-          </article>
-          <article>
-            <span>Expansion</span>
-            <h3>Market preparation</h3>
-            <p>
-              Altivium is preparing for partner conversations, investor
-              outreach, and market discovery with a safety-first narrative.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section team">
-        <div class="section-heading">
-          <p class="eyebrow">Team</p>
-          <h2>A cross-functional team connecting engineering, hardware, and go-to-market strategy.</h2>
-        </div>
-        <div class="team-grid">
-          <article>
-            <h3>Founder & Engineering</h3>
-            <p>Product direction, technical validation, and startup execution.</p>
-          </article>
-          <article>
-            <h3>Hardware Development</h3>
-            <p>Physical product design, durability thinking, and field readiness.</p>
-          </article>
-          <article>
-            <h3>Strategy & Market Entry</h3>
-            <p>Customer discovery, partnerships, and global expansion planning.</p>
-          </article>
-        </div>
+          </div>
+          <div class="card-grid three">
+            <article class="info-card">
+              <span>Build</span>
+              <h3>Founder & Engineering</h3>
+              <p>Product direction, technical validation, and startup execution.</p>
+            </article>
+            <article class="info-card">
+              <span>Test</span>
+              <h3>Hardware Development</h3>
+              <p>Physical product design, durability thinking, and field readiness.</p>
+            </article>
+            <article class="info-card">
+              <span>Grow</span>
+              <h3>Strategy & Market Entry</h3>
+              <p>Customer discovery, partnerships, and global expansion planning.</p>
+            </article>
+          </div>
+        </section>
       </section>
 
       <section class="closing" id="contact">
