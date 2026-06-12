@@ -62,13 +62,11 @@ a {
   font-weight: 800;
 }
 
-.brand-mark {
-  display: grid;
-  width: 34px;
-  height: 34px;
-  place-items: center;
-  border: 1px solid currentColor;
-  border-radius: 8px;
+.brand-logo {
+  display: block;
+  width: auto;
+  height: 38px;
+  object-fit: contain;
 }
 
 .nav {
@@ -357,9 +355,19 @@ h1 {
   border-top: 1px solid var(--line);
 }
 
-.footer span:first-child {
+.footer-brand {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
   color: var(--ink);
   font-weight: 900;
+}
+
+.footer-logo {
+  display: block;
+  width: auto;
+  height: 28px;
+  object-fit: contain;
 }
 
 @media (max-width: 1040px) {
@@ -399,9 +407,8 @@ h1 {
     padding: 14px;
   }
 
-  .brand-mark {
-    width: 30px;
-    height: 30px;
+  .brand-logo {
+    height: 32px;
   }
 
   .nav-cta {
